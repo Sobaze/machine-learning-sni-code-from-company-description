@@ -1,0 +1,47 @@
+{
+  "input_parameters": {
+    "name_of_data_file": "nlp_applied_data_0",
+    "name_of_custom_stopwords_file": "custom_stopwords_1",
+    "data_limit": 900000,
+    "use_full_SNI_numbers": false,
+    "random_state": 42,
+    "naive_bayes": {
+      "on": false,
+      "alpha": 2
+    },
+    "svm": {
+      "on": false,
+      "C": 1,
+      "class_weight": "balanced"
+    },
+    "pipeline": {
+      "on": false
+    },
+    "split_training_and_testing_data": {
+      "test_size": 0.2,
+      "stratify": false
+    },
+    "under_sampling": {
+      "on": true,
+      "sampling_strategy": "all"
+    },
+    "filter_low_occuring_labels": {
+      "on": true
+    },
+    "random_oversampling": {
+      "on": false,
+      "sampling_strategy": "minority"
+    },
+    "SMOTE": {
+      "on": false,
+      "k_neighbors": 1,
+      "sampling_strategy": "all"
+    },
+    "combine_under_and_oversampling": {
+      "on": false,
+      "over_sampling_strategy": "minority",
+      "under_sampling_strategy": "majority"
+    }
+  },
+  "model_test_results": {}
+}
